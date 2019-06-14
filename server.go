@@ -57,7 +57,7 @@ func DetermineIP(req *http.Request) string {
 func Root(writer http.ResponseWriter, req *http.Request) {
 	remoteIP := DetermineIP(req)
 
-	fmt.Printf("%s %s %s '%s' '%s'\n", req.Method, req.Proto, req.RequestURI, remoteIP, req.Header.Get("User-Agent"))
+	fmt.Printf("%s %s %s '%s' '%s' '%s'\n", req.Method, req.Proto, req.RequestURI, remoteIP, req.Host, req.Header.Get("User-Agent"))
 
 	writer.WriteHeader(200)
 	fmt.Fprintf(writer, "%s", remoteIP)
