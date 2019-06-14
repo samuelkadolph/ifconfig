@@ -26,6 +26,8 @@ docker run --detach --name=ifconfig --restart always --publish 7570:7570 samuelk
 
 ### Parameters
 
+These parameters are for running the app directly. There are no parameters for the docker image.
+
 | Parameter | Function |
 | :----: | --- |
-| `-listen ip:port` | TODO |
+| `-listen ip:port` | Listens on the specified ip and port. Can be called multiple times |
