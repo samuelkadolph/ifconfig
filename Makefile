@@ -1,6 +1,6 @@
 BUILD_DATE ?= `date -u +"%Y-%m-%dT%H:%M:%SZ"`
 CGO_ENABLED ?= 1
-DOCKER_IMAGE ?= samuelkadolph/openvpn-monitor
+DOCKER_IMAGE ?= samuelkadolph/ifconfig
 GOBIN ?= go
 VCS_REF ?= `git rev-parse --short HEAD`
 
