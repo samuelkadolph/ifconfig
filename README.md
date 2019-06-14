@@ -5,9 +5,27 @@
 [![Docker Stars](https://img.shields.io/docker/stars/samuelkadolph/ifconfig.svg?style=flat)](https://hub.docker.com/r/samuelkadolph/ifconfig/ "Docker Stars")
 [![MIT License](https://img.shields.io/github/license/samuelkadolph/ifconfig.svg?style=flat)](https://github.com/samuelkadolph/ifconfig/blob/master/LICENSE "MIT License")
 
+ifconfig is a simple Go HTTP app that returns the IP of the client. Used to run [ifconfig.ca](https://ifconfig.ca) and
+[ifconfig.so](https://ifconfig.so) for a no-nonsense simple use in scripting.
+
 ### Usage
 
+#### Go
+
 ```
+go get github.com/samuelkadolph/ifconfig
+go build github.com/samuelkadolph/ifconfig
+$GOPATH/bin/ifconfig
+```
+
+#### Docker
+
+```
+docker run --detach --name=ifconfig --restart always --publish 7570:7570 samuelkadolph/ifconfig
 ```
 
 ### Parameters
+
+| Parameter | Function |
+| :----: | --- |
+| `-listen ip:port` | TODO |
