@@ -1,2 +1,14 @@
+language: go
+
+go:
+  - 1.x
+
 services:
   - docker
+
+script:
+  - make test docker-build
+  - docker run --detach --name ifconfig --publish 7570:7570 samuelkadolph/ifconfig
+  - sleep 3
+  - curl http://127.0.0.1:7570 | grep "127.0.0.1"
+  - docker kill ifconfig
