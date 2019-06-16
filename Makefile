@@ -4,11 +4,11 @@ GOBIN ?= go
 IMAGE_NAME ?= samuelkadolph/ifconfig:latest
 VCS_REF ?= `git rev-parse --short HEAD`
 
-default: clean test build
+default: build
 
 build: bin/ifconfig
 
-bin/%:
+bin/%: $(filter-out %test.go, $(wildcard *.go))
 	$(GOBIN) build -o bin/$* .
 
 docker-build:
