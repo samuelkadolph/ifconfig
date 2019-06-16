@@ -6,13 +6,13 @@ VCS_REF ?= `git rev-parse --short HEAD`
 
 default: clean test build
 
-docker-build:
-	docker build --build-arg $(BUILD_DATE) --build-arg $(VCS_REF) --tag $(IMAGE_NAME) .
-
 build: bin/ifconfig
 
 bin/%:
 	$(GOBIN) build -o bin/$* .
+
+docker-build:
+	docker build --build-arg BUILD_DATE=$(BUILD_DATE) --build-arg VCS_REF=$(VCS_REF) --tag $(IMAGE_NAME) .
 
 clean:
 	rm -rf bin/*
