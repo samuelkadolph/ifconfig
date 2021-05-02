@@ -14,7 +14,6 @@ ifconfig is a simple Go HTTP app that returns the IP of the client. Used to run 
 
 ```
 go get github.com/samuelkadolph/ifconfig
-go build github.com/samuelkadolph/ifconfig
 $GOPATH/bin/ifconfig
 ```
 
