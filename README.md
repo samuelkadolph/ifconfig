@@ -1,9 +1,9 @@
 ## samuelkadolph/ifconfig
 
-[![Build Status](https://img.shields.io/travis/samuelkadolph/ifconfig.svg)](https://travis-ci.com/samuelkadolph/ifconfig/ "Build Status")
-[![Docker Pulls](https://img.shields.io/docker/pulls/samuelkadolph/ifconfig.svg?style=flat)](https://hub.docker.com/r/samuelkadolph/ifconfig/ "Docker Pulls")
-[![Docker Stars](https://img.shields.io/docker/stars/samuelkadolph/ifconfig.svg?style=flat)](https://hub.docker.com/r/samuelkadolph/ifconfig/ "Docker Stars")
-[![MIT License](https://img.shields.io/github/license/samuelkadolph/ifconfig.svg?style=flat)](https://github.com/samuelkadolph/ifconfig/blob/master/LICENSE "MIT License")
+[![Build Status](https://img.shields.io/travis/com/samuelkadolph/ifconfig.svg?style=for-the-badge)](https://travis-ci.com/samuelkadolph/ifconfig/ "Build Status")
+[![Docker Pulls](https://img.shields.io/docker/pulls/samuelkadolph/ifconfig.svg?style=for-the-badge)](https://hub.docker.com/r/samuelkadolph/ifconfig/ "Docker Pulls")
+[![Docker Stars](https://img.shields.io/docker/stars/samuelkadolph/ifconfig.svg?style=for-the-badge)](https://hub.docker.com/r/samuelkadolph/ifconfig/ "Docker Stars")
+[![MIT License](https://img.shields.io/github/license/samuelkadolph/ifconfig.svg?style=for-the-badge)](https://github.com/samuelkadolph/ifconfig/blob/master/LICENSE "MIT License")
 
 ifconfig is a simple Go HTTP app that returns the IP of the client. Used to run [ifconfig.ca](https://ifconfig.ca) and
 [ifconfig.so](https://ifconfig.so) for a no-nonsense simple use in scripting.
