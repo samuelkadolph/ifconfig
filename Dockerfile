@@ -5,7 +5,7 @@ WORKDIR /go/src/github.com/samuelkadolph/ifconfig
 
 COPY . .
 
-RUN make clean test build
+RUN CGO_ENABLED=0 make clean test build
 
 # Run Stage
 FROM alpine:latest
