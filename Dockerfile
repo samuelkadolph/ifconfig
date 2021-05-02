@@ -1,11 +1,11 @@
 # Build Stage
-FROM golang:1.12.6-stretch AS build
+FROM golang:buster AS build
 
 WORKDIR /go/src/github.com/samuelkadolph/ifconfig
 
 COPY . .
 
-RUN CGO_ENABLED=0 make clean test build
+RUN make clean test build
 
 # Run Stage
 FROM alpine:latest
